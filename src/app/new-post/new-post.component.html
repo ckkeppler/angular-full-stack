@@ -1,0 +1,25 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="user">User</label>
+    <input
+      type="text"
+      id="user"
+      formControlName="user"
+      placeholder="enter username"
+    />
+  </div>
+  <div>
+    <label for="comment">Comment</label>
+    <textarea
+      name="comment"
+      id="comment"
+      formControlName="comment"
+      cols="30"
+      rows="10"
+      placeholder="comment here..."
+    ></textarea>
+  </div>
+  <div>
+    <button type="submit">Post your comment</button>
+  </div>
+</form>
